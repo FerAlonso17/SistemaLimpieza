@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(108, 175, 234), #ced4ee);
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-self: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 10px 0 #999, 2px 4px 10px 0 #999;
+}
+h2,p{
+    text-align: center;
+}

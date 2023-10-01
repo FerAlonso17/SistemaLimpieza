@@ -1,0 +1,143 @@
+/*GOOGLE FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/*------------BARRA DE NAVEGACION------------*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* border: 1px solid black; */
+}
+header {
+    background-color: rgb(6, 33, 184);
+    display: flex;
+    align-items: center;
+    height: 120px;
+    transition: .5s;
+}
+h1{
+    font-family: 'Audiowide', cursive;
+    color: #fff;
+}
+.nav-flexContainer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100vw;
+    margin-right: 1em;
+    height: 100%;
+}
+.nav-flexContainer__ul{
+    display: flex;
+    /* gap: 17px; */
+}
+nav ul li a{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 0 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+nav ul li a:hover{
+    background: rgb(35, 67, 248);
+    padding: 0 25px;
+    transition: .5s;
+}
+.logo{
+    position: relative;
+    width: 6em;
+    height: 6em;
+    margin: 1em 1em;
+}
+#menu{
+    visibility: hidden;
+}
+.menu-icon{
+    width: 25px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+header label{
+    cursor: pointer;
+    visibility: hidden;
+}
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+    header{
+        height: 80px;
+        transition: .5s;
+    }
+    .nav-flexContainer{
+        margin-right: 8px;
+    }
+    .logo{
+        width: 4em;
+        height: 4em;
+        margin: 1em 1em;
+    }
+    h1{
+        font-size: x-large;
+    }
+    nav ul li a{
+        height: 80px;
+        padding: 0 10px;
+        font-size: 15px;
+    }
+    nav ul li a:hover{
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    header{
+        height: 70px;
+        background: rgb(6, 33, 184);
+        box-sizing: border-box;
+        transition: .5s;
+    }
+    .nav-flexContainer{
+        visibility: hidden;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        margin: 0;
+        height: 17em;
+        overflow-x: hidden;
+    }
+    .logo{
+        width: 3em;
+        height: 3em;
+        margin: 1em;
+    }
+    h1{
+        font-size: large;
+    }
+    header label{
+        visibility: visible;
+        position: absolute;
+        right: 20px;
+    }
+    .nav-flexContainer__ul{
+        display: grid;
+        grid-template-rows: repeat(5,1fr);
+        width: 100vw;
+        background: rgb(6, 33, 184);
+        top: 0;
+        height: 100%;
+    }
+    nav ul li{
+        top: 0;
+    }
+    nav ul li a{
+        width: 100vw;
+        height: 100%;
+        padding-left: 40px;
+    }
+    #menu:checked ~ .nav-flexContainer {
+        visibility: visible;
+    }
+}
+/*---------------------------------------------*/

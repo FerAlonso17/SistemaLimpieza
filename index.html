@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylesLogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <title>SistemaWeb</title>
+</head>
+<body>
+    <div class="descripcion">
+        <h1>CleanConnect</h1>
+        <p>La limpieza de tu hogar en la palma de tus manos</p>
+        <img src="images/descarga (1).png" alt="">
+    </div>
+    <div class="login">
+        <div class="container principal">
+            <h2>Ingresa a tu cuenta</h2>
+            <input type="text" placeholder="Correo electrónico" required>
+            <div class="password-container">
+                <input type="password" id="passInput" placeholder="Contraseña" required>
+                <i class="icon-password fas fa-eye" id="iconPassword"></i>
+            </div>
+            <input type="button" value="Entrar" id="btn-entrar">
+            <a href="">¿Has olvidado la contraseña?</a>
+        </div>
+        <div class="container secundario">
+            <span>¿No tienes una cuenta?</span>
+            <input type="button" value="Regístrate" id="btn-registrar">
+        </div>
+    </div>
+    <script src="script/scriptLoginUsuario.js"></script>
+</body>
+</html>
