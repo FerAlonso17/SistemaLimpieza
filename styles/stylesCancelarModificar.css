@@ -1,6 +1,3 @@
-/*GOOGLE FONTS*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
-
 /*------------BARRA DE NAVEGACION------------*/
 *{
     margin: 0;
@@ -8,6 +5,11 @@
     list-style: none;
     text-decoration: none;
     /* border: 1px solid black; */
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 header {
     background-color: rgb(6, 33, 184);
@@ -142,35 +144,68 @@ header label{
 }
 /*---------------------------------------------------------*/
 /*MAIN*/
-section{
-    width: 75vw;
-    margin: 25px auto 35px;
-}
-section h3{
-    text-align: center;
-    margin-bottom: 20px;
-    background: #5571ff;
-}
-.container{
-    display: grid;
+main{
+    height: 80vw;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
-    grid-template-rows: repeat(auto-fill);
-    grid-template-columns: repeat(3, minmax(min-content,260px));
-    gap: 20px;
+    align-items: center;
 }
-.container div{
-    border: 1px solid blue;
+main section{
+    width: 60vw;
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
-.container p,ul{
-    padding: 10px 0 10px 10px;
+.consideraciones{
+    padding: 20px;
+    background: rgb(250, 97, 97);
+    border-radius: 8px;
 }
-section h4{
-    text-align: center;
-    /* padding-bottom: 10px; */
-    padding: 10px 0;
-    background: #0b1d79;
+main li{
+    list-style: inside;
+}
+.selecciones{
+    width: max-content;
+    padding: 20px 0;
+}
+label,.consideraciones h3{
+    display: block;
+    margin-bottom: 5px;
+}
+.accion{
+    display: inline-block;
+}
+select, [type="text"]{
+    margin-bottom: 10px;
+}
+[type="text"]{
+    width: 300px;
+    height: 25px;
+}
+#buttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+[type="button"]{
+    width: 150px;
+    height: 25px;
+    cursor: pointer;
+}
+[value="Confirmar"]{
+    border-radius: 5px;
+    border: 1px solid rgb(25, 86, 41);
     color: #fff;
+    background: #108a49;
 }
+[value="Confirmar"]:hover{
+    background: #0c6636;
+}
+
 /*---------------------------------------------------------*/
 /*FOOTER*/
 footer{

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0b97715c74.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/stylesCancelarModificar.css">
+
+    <title>Candelar/ModificarServicio</title>
+</head>
+<body>
+    <header>
+        <img src="images/limpieza-interna.png" class="logo" title="CleanConnect">
+        <h1>CleanConnect</h1>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <img src="https://cdn-icons-png.flaticon.com/512/3388/3388837.png" class="menu-icon">
+        </label>
+        <nav class="nav-flexContainer">
+            <ul class="nav-flexContainer__ul">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Buscar/ContratarServicio</a></li>
+                <li><a href="">Cancelar/ModificarServicio</a></li>
+                <li><a href="">CalificarServicio</a></li>
+                <li><a href="">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="consideraciones">
+                <h3>Consideraciones a tener en cuenta:</h3>
+                <ul>
+                    <li>Al seleccionar modificar realizará un nuevo pago y se gestionará reembolso del pago anterior
+                    </li>
+                    <li>Al seleccionar cancelar el servicio no se llevará a cabo y se reembolsará el pago
+                    </li>
+                    <li>Posterior a seleccionar modificar servicio, será redirigido para que modifique el contrato de servicio</li>
+                </ul>
+            </div>
+            <div class="selecciones">
+                <label for="services">Seleccione servicio que desea modificar o cancelar:</label>
+                <select name="services" id="services">
+                    <option value="LimpiezaIntermedia-hogares">Limpieza intermedia - Hogares</option>
+                    <option value="LimpiezaPara Eventos-Empresas">Limpieza para eventos - Empresas</option>
+                </select>
+                <label>Mencione la entidad bancaria a la que se reembolsará el pago:</label>
+                <input type="text">
+                <label for="">Ingrese número de cuenta:</label>
+                <input type="text">
+                <label>Indique qué acción realizará:</label>
+                <input type="radio" id="cancelar" value="cancelar" name="option">
+                <label for="cancelar" class="accion">Cancelar Servicio</label><br>
+                <input type="radio" id="Modificar" value="Modificar" name="option">
+                <label for="Modificar" class="accion">Modificar Servicio</label><br>
+                <div id="buttons">
+                    <input type="button" value="Cancelar">
+                    <input type="button" value="Confirmar">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>SÍGUENOS EN REDES SOCIALES</h3>
+        <div class="container-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>    
+        <p id="copyright">All rights reserved for| Grupo 3</p>
+    </footer>
+    <script src="script/scriptInicio.js"></script>
+</body>
+</html>
