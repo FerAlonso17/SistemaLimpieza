@@ -29,19 +29,19 @@ var btnEntrar = document.querySelector("#btn-entrar");
 var btnRegistrar = document.querySelector("#btn-registrar");
 
 // Definir las credenciales válidas
-var emailValido = "usuario@gmail.com";
-var passwordValido = "usuario123";
+var emailValido = "admin@gmail.com";
+var passwordValido = "admin123";
 
 btnEntrar.addEventListener("click", function() {
     var email = emailInput.value;
     var password = paswInput.value;
 
     if (email === emailValido && password === passwordValido) {
-        window.location.href = "../SistemaCleanConnect.html";
+        window.location.href = "";
     } else {
         alert("Usuario o contraseña incorrectos");
     }
 });
 btnRegistrar.addEventListener("click", function() {
-    window.location.href = "../registroUsuario.html";
+    window.location.href = "../registroAdmin.html";
 });

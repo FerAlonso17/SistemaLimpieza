@@ -7,27 +7,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Document</title>
+    <title>Registrar Administrador</title>
 </head>
 <body>
     <div class="container">
         <h1>CleanConnect</h1>
         <h2>Regístrate</h2>
-        <input type="text" placeholder="Nombres" class="datos" required>
-        <input type="text" placeholder="Apellidos" class="datos" required>
-        <input type="text" placeholder="Correo electrónico" class="datos" required>
+        <input type="text" placeholder="Nombres" id="name" class="datos" required>
+        <input type="text" placeholder="Apellidos" id="lastName" class="datos" required>
+        <input type="text" placeholder="Correo electrónico" id="email" class="datos" required>
         <div class="password-container">
             <input type="password" id="passInput" placeholder="Contraseña nueva" class="datos" required>
             <i class="icon-password fas fa-eye" id="iconPassword"></i>
         </div>
-        <input type="text" placeholder="DNI" class="datos" required>
-        <input type="text" placeholder="Teléfono" class="datos" required>
+        <input type="text" placeholder="DNI" id="dni" class="datos" required>
+        <input type="text" placeholder="Teléfono" id="phone" class="datos" required>
         <div>
             <input type="checkbox" id="terminos" value="terminos" required>
             <label for="terminos">Aceptar términos y condiciones</label><br>
         </div>
         <input type="button" value="Registrarse" id="btn-entrar">
-        <!-- <a href="">¿Has olvidado la contraseña?</a> -->
     </div>
     <script src="script/scriptRegistroUsuario.js"></script>
 </body>

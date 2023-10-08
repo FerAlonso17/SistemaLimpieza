@@ -15,10 +15,29 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/stylesInicio.css">
 
-    <title>Inicio</title>
+    <title>CleanConnect</title>
 </head>
 <body>
-    <main>
+    <!-- HEADER -->
+    <header>
+        <img src="images/limpieza-interna.png" class="logo" title="CleanConnect">
+        <h1>CleanConnect</h1>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <img src="https://cdn-icons-png.flaticon.com/512/3388/3388837.png" class="menu-icon">
+        </label>
+        <nav class="nav-flexContainer">
+            <ul class="nav-flexContainer__ul">
+                <li><a href="" data-page="inicio.html">Inicio</a></li>
+                <li><a href="" data-page="buscarContratarServicio.html">Buscar/ContratarServicio</a></li>
+                <li><a href="" data-page="cancelarModificarServicio.html">Cancelar/ModificarServicio</a></li>
+                <li><a href="" data-page="calificarServicio.html">CalificarServicio</a></li>
+                <li><a href="index.html" id="salir">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main id="container__main">
         <section id="hogares">
             <h3>SERVICIO DE LIMPIEZA PARA HOGARES</h3>
             <div class="container hogares">
@@ -94,6 +113,17 @@
             </div>
         </section>
     </main>
-    <script src="script/scriptSalir.js"></script>
+    <!-- FOOTER -->
+    <footer>
+        <h3>SÍGUENOS EN REDES SOCIALES</h3>
+        <div class="container-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>    
+        <p id="copyright">All rights reserved for| Grupo 3</p>
+    </footer>
+    <script src="script/scriptBarra-Footer-Salir.js"></script>
 </body>
 </html>
